@@ -1,0 +1,138 @@
+/* Base Layout Styling (Genereal Grouping) */
+    /* Commented out the 'flex-direction' during this project, so as to view the "3" sections that I made, for easier styling view (toggled on/off to check settings as changes were made) */
+
+    /* Minimize style property code that you are initially content with, to avoid    getting lost in scrolling the style sheet */
+
+    /* Sources to remember: 
+        https://imagecolorpicker.com/en/ (can upload image from computer to source your color match */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: white;
+  font-size: 1em;
+  color: #2d3945;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+header h1,
+header h2,
+header p,
+footer {
+  text-align: center;
+}
+
+.flexbox {
+  margin-right: .8em;
+  margin-left: .8em;
+}
+
+label,
+p {
+  color: darkgray;
+}
+
+header h1 {
+  background: #2d3945;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  padding: 25px 40px;
+}
+
+header h2 {
+  padding-top: 25px;
+  padding-bottom: 9px;
+  font-weight: 700;
+}
+
+header p {
+  font-size: 1.2em;
+  letter-spacing: .3px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 25px;
+}
+
+.hb1 {
+  border: 2px solid #2d3945;
+  margin-bottom: 3px;
+  margin-left: .7em;
+  margin-right: .7em;
+}
+
+.hb2,
+.hb3 {
+  border: 1px solid #2d3945;
+  margin-left: .7em;
+  margin-right: .7em;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-weight: bolder;
+  font-size: 1.4em;
+  margin-left: .5em;
+  padding-top: 25px;
+  padding-bottom: 10px;
+
+}
+
+label {
+  display: block;
+  margin-top: 1.0em;
+  margin-bottom: .5em;
+}
+
+input,
+#state {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 4px;
+  background: rgba(184, 178, 178, 0.172);
+  border: none;
+}
+
+#zip {
+  margin-bottom: 25px;
+}
+
+.newsletter_format p {
+  padding-left: .8em;
+}
+
+/* .newsletter_format label input {
+  display: inline-flex;
+  justify-content: space-between;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
