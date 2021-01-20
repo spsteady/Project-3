@@ -1,7 +1,7 @@
 /* Base Layout Styling (Genereal Grouping) */
     /* Commented out the 'flex-direction' during this project, so as to view the "3" sections that I made, for easier styling view (toggled on/off to check settings as changes were made) */
 
-    /* Minimize style property code that you are initially content with, to avoid    getting lost in scrolling the style sheet */
+    /* Minimize style property code that you are initially content with, to avoid getting lost in scrolling the style sheet */
 
     /* Sources to remember: 
         https://imagecolorpicker.com/en/ (can upload image from computer to source your color match */
@@ -37,7 +37,7 @@ footer {
 
 label,
 p {
-  color: darkgray;
+  color: rgb(120, 117, 117);
 }
 
 header h1 {
@@ -63,7 +63,7 @@ header p {
 }
 
 .hb1 {
-  border: 2px solid #2d3945;
+  border: 3px solid #2d3945;
   margin-bottom: 3px;
   margin-left: .7em;
   margin-right: .7em;
@@ -85,7 +85,7 @@ legend {
   font-size: 1.4em;
   margin-left: .5em;
   padding-top: 25px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 
 }
 
@@ -95,8 +95,15 @@ label {
   margin-bottom: .5em;
 }
 
+input::placeholder {
+  text-align: right;
+  font-size: .9em;
+  font-style: italic;
+}
+
 input,
-#state {
+#state,
+#users_interests {
   display: block;
   width: 100%;
   padding: 10px;
@@ -104,20 +111,132 @@ input,
   border-radius: 4px;
   background: rgba(184, 178, 178, 0.172);
   border: none;
+  color: rgb(52, 48, 48);
+}
+
+input:focus,
+#state:focus {
+  outline: none;
+  box-shadow: 0 0 10px 2px #2d3945;
+  background-color: rgba(240, 230, 140, 0.078);
+  transition: 0.4s;
 }
 
 #zip {
-  margin-bottom: 25px;
+  width: 50%;
+  margin-left: 0;
+  margin-bottom: 25px;  
 }
 
 .newsletter_format p {
   padding-left: .8em;
 }
 
-/* .newsletter_format label input {
-  display: inline-flex;
-  justify-content: space-between;
-} */
+.newsletter_format .flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.newsletter_format input {
+  width: initial;
+}
+
+.newsletter_format label {
+  margin: auto 10px 0;
+}
+
+.format_header {
+  margin-top: .8em;
+  margin-bottom: .5em;
+}
+
+.newsletter_format [for="users_interests"] {
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: .5em;  
+}
+
+#users_interests {
+  padding: 14px 8px 30px 8px;
+  border-radius: 4px;
+}
+
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px 2px #2d3945;
+  background-color: rgba(240, 230, 140, 0.078);
+  transition: .4s;
+
+}
+
+.newsletter_format section {
+  margin-bottom: .5em;
+  margin-top: .5em;
+}
+
+.newsletter_format button {
+  flex: 1;
+  background-color: teal;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  padding: 16px 32px;
+  margin: 0;
+  cursor: pointer;  
+}
+
+.container footer {
+  padding: 25px 20px;
+  font-style: italic;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 700px;
+    margin: auto;
+  } 
+
+   .contact_info .flexbox {
+    display: flex; 
+    flex-direction: row;
+    margin-bottom: .9em;
+  }
+
+  .contact_info label {
+    flex-basis: 25%;
+    padding-bottom: .5em;
+  }
+
+  .contact_info input {
+    flex-basis: 91%;
+  }
+
+  #state {
+    margin-left: 2%;
+  }
+
+  .contact_info .flexbox #zip {
+    flex-basis: 30%;
+    margin-left: -3.5%;
+    margin-right: .5%;
+    margin-bottom: 25px;
+  }
+
+
+
+ 
+
+  
+
+
+
+
+  
+
+
+}
 
 
 
