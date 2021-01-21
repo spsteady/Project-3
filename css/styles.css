@@ -16,6 +16,7 @@ body {
   background: white;
   font-size: 1em;
   color: #2d3945;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -45,6 +46,7 @@ header h1 {
   color: white;
   text-transform: uppercase;
   font-size: 1.2em;
+  margin-top: 0;
   padding: 25px 40px;
 }
 
@@ -63,8 +65,10 @@ header p {
 }
 
 .hb1 {
-  border: 3px solid #2d3945;
-  margin-bottom: 3px;
+  background-color: #2d3945;
+  padding: 1px;
+  border: 1px solid #2d3945;
+  margin-bottom: .3em;
   margin-left: .7em;
   margin-right: .7em;
 }
@@ -99,6 +103,7 @@ input::placeholder {
   text-align: right;
   font-size: .9em;
   font-style: italic;
+  padding-right: 4px;
 }
 
 input,
@@ -187,9 +192,15 @@ textarea:focus {
   cursor: pointer;  
 }
 
-.container footer {
+footer {
   padding: 25px 20px;
   font-style: italic;
+  background-color: #2d3945;
+  margin: auto 0;
+}
+
+footer p {
+  color: white;
 }
 
 @media (min-width: 768px) {
@@ -224,6 +235,14 @@ textarea:focus {
     margin-bottom: 25px;
   }
 
+ footer {
+    margin: auto 0;
+    padding: 25px 40px;
+ }
+
+ footer p {
+   color: white;
+ }
 
 
  
